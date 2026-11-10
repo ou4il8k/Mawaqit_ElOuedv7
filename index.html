@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b16">
+  <meta name="description" content="مواقيت الصلاة لولاية الوادي - الجزائر، مع العد التنازلي والتقويم الهجري والأذكار.">
+  <title>مواقيت الوادي | نور يومك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+  <div class="cinematic-backdrop" aria-hidden="true"></div>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="light-beam light-beam-one" aria-hidden="true"></div><div class="light-beam light-beam-two" aria-hidden="true"></div>
+  <div class="grain"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="العودة إلى الرئيسية">
+      <span class="brand-mark"><svg class="brand-moon-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M23.8 22.7A12.4 12.4 0 0 1 9.3 5.1 12.8 12.8 0 1 0 23.8 22.7Z"/><path d="m23.5 5 .8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2Z"/></svg></span>
+      <span><b>مواقيت الوادي</b><small>نــور يــومــك</small></span>
+    </a>
+    <nav class="main-nav">
+      <a class="active" href="#home">الرئيسية</a>
+      <a href="#prayers">المواقيت</a>
+      <a href="#azkar">الأذكار</a>
+      <a href="#calendar">التقويم</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="settingsOpen" aria-label="الإعدادات" title="الإعدادات"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Z"/><path d="m19.4 13.5 1.1.9-1.6 2.8-1.4-.5a7.8 7.8 0 0 1-1.6.9l-.2 1.5h-3.3l-.3-1.5a7.8 7.8 0 0 1-1.6-.9l-1.4.5-1.6-2.8 1.1-.9a7.2 7.2 0 0 1 0-1.9l-1.1-.9 1.6-2.8 1.4.5a7.8 7.8 0 0 1 1.6-.9l.3-1.5h3.3l.2 1.5a7.8 7.8 0 0 1 1.6.9l1.4-.5 1.6 2.8-1.1.9a7.2 7.2 0 0 1 0 1.9Z"/></svg></button>
+      <button class="icon-btn" id="refreshBtn" aria-label="تحديث المواقيت" title="تحديث المواقيت"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9A7 7 0 0 1 18 6.5L20 12M4 12l2 5.5A7 7 0 0 0 18.4 15"/></svg></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> مواقيت الصلاة · ولاية الوادي · الجزائر</div>
+        <p class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+        <h1>حين ينادي <em>النور</em><br>يطمئنّ القلب</h1>
+        <p class="hero-sub">اجعل صلاتك موعداً للسكينة، ودع يومك يسير على إيقاع النور.</p>
+        <div class="hero-meta">
+          <div><span class="meta-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></span><span id="liveClock">--:--:--</span><small>التوقيت المحلي</small></div>
+          <div class="meta-divider"></div>
+          <div><span class="meta-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M8 3v4M16 3v4M4 10h16M8 14h2m4 0h2m-8 3h2"/></svg></span><span id="gregorianDate">...</span><small id="hijriDate">جارٍ تحميل التاريخ الهجري</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="moon"></div>
+        <div class="star star-a">✦</div><div class="star star-b">✧</div><div class="star star-c">✦</div>
+        <div class="mosque-scene">
+          <svg viewBox="0 0 620 330" role="img" aria-label="رسم زخرفي لمسجد">
+            <defs><linearGradient id="dome" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e7d2a0"/><stop offset=".5" stop-color="#b99a62"/><stop offset="1" stop-color="#5e4a35"/></linearGradient></defs>
+            <path d="M0 290H620V330H0Z" fill="#111729"/>
+            <path d="M92 290V177H158V290M462 290V177H528V290" fill="#172139" stroke="#bda16b" stroke-opacity=".5"/>
+            <path d="M112 177V93L125 65L138 93V177M482 177V93L495 65L508 93V177" fill="#1b2944" stroke="#c7aa73" stroke-width="2"/>
+            <path d="M125 65V35M495 65V35" stroke="#d8c08c" stroke-width="3"/><path d="M119 35Q125 22 131 35" fill="none" stroke="#d8c08c" stroke-width="2"/>
+            <path d="M160 290V214Q310 34 460 214V290Z" fill="url(#dome)" opacity=".92"/>
+            <path d="M190 290V219Q310 82 430 219V290Z" fill="#172139"/>
+            <path d="M278 290V239Q310 194 342 239V290Z" fill="#0c1223" stroke="#c4a66e" stroke-opacity=".65"/>
+            <path d="M160 214Q310 34 460 214" fill="none" stroke="#e5d2a5" stroke-width="3" opacity=".75"/>
+            <path d="M310 38V13M302 15Q310 1 318 15" stroke="#e5d2a5" stroke-width="2" fill="none"/>
+            <g fill="#d9c18d" opacity=".75"><circle cx="220" cy="220" r="3"/><circle cx="400" cy="220" r="3"/><circle cx="310" cy="145" r="3"/></g>
+            <path d="M30 290V250H590V290" fill="none" stroke="#c5a66e" stroke-opacity=".45"/>
+          </svg>
+        </div>
+        <div class="art-caption">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ</div>
+      </div>
+    </section>
+
+    <section class="next-prayer section-wrap">
+      <div class="next-glow"></div>
+      <div class="next-info">
+        <span class="section-kicker">موعدك القادم مع السكينة</span>
+        <h2>الصلاة القادمة</h2>
+        <div class="next-name" id="nextPrayerName">--</div>
+        <p id="nextPrayerHint">ننتظر تحميل المواقيت...</p>
+      </div>
+      <div class="countdown-wrap">
+        <div class="countdown" id="countdown" aria-live="off">
+          <div><strong id="hours">00</strong><small>ساعة</small></div><i>:</i>
+          <div><strong id="minutes">00</strong><small>دقيقة</small></div><i>:</i>
+          <div><strong id="seconds">00</strong><small>ثانية</small></div>
+        </div>
+        <span class="countdown-caption">الوقت المتبقي حتى الأذان</span>
+      </div>
+      <div class="next-decoration">۞</div>
+    </section>
+
+    <section class="section-wrap prayer-section" id="prayers">
+      <div class="section-heading">
+        <div><span class="section-kicker">على مدار اليوم</span><h2>مواقيت الصلاة</h2></div>
+        <div class="date-chip"><span class="date-chip-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2Z"/><path d="m19 16 .7 2.3L22 19l-2.3.7L19 22l-.7-2.3L17 19l1.3-.7L19 16Z"/></svg></span><span id="todayLabel">مواقيت اليوم</span></div>
+      </div>
+      <div class="prayer-grid" id="prayerGrid">
+        <article class="prayer-card skeleton"></article><article class="prayer-card skeleton"></article>
+        <article class="prayer-card skeleton"></article><article class="prayer-card skeleton"></article><article class="prayer-card skeleton"></article>
+      </div>
+      <p class="source-note">المواقيت محسوبة وفق طريقة الجزائر (AlAdhan)، وقد تختلف دقائق عن توقيت المسجد المحلي. يُرجى اعتماد إعلان المسجد عند وجود اختلاف.</p>
+    </section>
+
+    <section class="feature-grid section-wrap">
+      <article class="feature-card qibla-card">
+        <div class="feature-top"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.8 8.2-2.5 5.1-5.1 2.5 2.5-5.1 5.1-2.5Z"/></svg></span><span class="section-kicker">اتجاه القبلة</span></div>
+        <div class="qibla-content"><div class="compass"><div class="compass-ring"><span class="north">N</span><span class="east">E</span><span class="south">S</span><span class="west">W</span><div class="needle" id="qiblaNeedle"><i></i></div><b>✦</b></div></div>
+          <div><h3>وجهتك إلى الكعبة</h3><strong class="qibla-degree">حوالي 111°</strong><p>اتجاه تقريبي من مدينة الوادي نحو مكة المكرمة.</p></div>
+        </div>
+      </article>
+      <article class="feature-card daily-card">
+        <div class="feature-top"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 1.8 7.2L21 12l-7.2 1.8L12 21l-1.8-7.2L3 12l7.2-2.8L12 2Z"/><path d="m19 2 .7 2.3L22 5l-2.3.7L19 8l-.7-2.3L16 5l2.3-.7L19 2Z"/></svg></span><span class="section-kicker">نور اليوم</span></div>
+        <p class="daily-verse" id="dailyVerse">﴿ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ﴾</p>
+        <span class="verse-source">سورة الرعد · الآية 28</span>
+      </article>
+    </section>
+
+    <section class="section-wrap azkar-section" id="azkar">
+      <div class="section-heading">
+        <div><span class="section-kicker">حصنك وطمأنينتك</span><h2>الأذكار اليومية</h2></div>
+        <div class="segmented" role="tablist"><button class="seg-btn selected" data-kind="morning">أذكار الصباح</button><button class="seg-btn" data-kind="evening">أذكار المساء</button></div>
+      </div>
+      <div class="azkar-intro"><span>❝</span><p>أحيِ قلبك بذكر الله، فالكلمات الطيبة نورٌ يرافق يومك.</p></div>
+      <div class="azkar-list" id="azkarList"></div>
+    </section>
+
+    <section class="section-wrap calendar-section" id="calendar">
+      <div class="section-heading">
+        <div><span class="section-kicker">الأيام والتواريخ</span><h2>التقويم الهجري</h2></div>
+        <div class="calendar-controls"><button class="icon-btn small" id="prevMonth" aria-label="الشهر السابق">‹</button><span id="calendarMonth">...</span><button class="icon-btn small" id="nextMonth" aria-label="الشهر التالي">›</button></div>
+      </div>
+      <div class="calendar-card">
+        <div class="calendar-summary"><div class="calendar-emblem"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M35.5 34A18 18 0 0 1 14 8.5 18.5 18.5 0 1 0 35.5 34Z"/><path d="m34 7 .9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9L34 7Z"/></svg></div><div><small>التاريخ الهجري اليوم</small><strong id="calendarHijriToday">جارٍ التحميل...</strong><span id="calendarGregorianToday"></span></div></div>
+        <div class="calendar-table-wrap"><table class="calendar-table"><thead><tr><th>الأحد</th><th>الإثنين</th><th>الثلاثاء</th><th>الأربعاء</th><th>الخميس</th><th>الجمعة</th><th>السبت</th></tr></thead><tbody id="calendarBody"><tr><td colspan="7">جارٍ تحميل التقويم...</td></tr></tbody></table></div>
+      </div>
+    </section>
+
+    <section class="closing section-wrap">
+      <div class="closing-symbol">۞</div>
+      <p>اللهم اجعل الصلاة قرة أعيننا، ونوراً لقلوبنا، وراحةً لأرواحنا.</p>
+      <span> مواقيت الوادي · صُمّم بكل عناية وحب على يد المبرمج وائل علية</span>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> مواقيت الوادي</span><span>اللهم صلّ وسلم على نبينا محمد ﷺ</span><a href="#home">العودة للأعلى ↑</a></footer>
+
+  <div class="modal-backdrop" id="settingsModal" aria-hidden="true">
+    <section class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+      <div class="modal-heading"><div><span class="section-kicker">خصّص تجربتك</span><h2 id="settingsTitle">الإعدادات</h2></div><button class="icon-btn" id="settingsClose" aria-label="إغلاق">×</button></div>
+      <label class="setting-row"><span><b>إظهار التاريخ الهجري</b><small>عرض التاريخ الهجري في أعلى الصفحة</small></span><input type="checkbox" id="hijriToggle" checked><i></i></label>
+      <label class="setting-row"><span><b>حركة الخلفية</b><small>تفعيل المؤثرات البصرية الهادئة</small></span><input type="checkbox" id="motionToggle" checked><i></i></label>
+      <label class="setting-row"><span><b>تنبيه الصلاة القادمة</b><small>إظهار تنبيه داخل الصفحة عند دخول الوقت (مع بقاء الموقع مفتوحاً)</small></span><input type="checkbox" id="notifyToggle"><i></i></label>
+      <div class="settings-note">طريقة الحساب: الجزائر (19). يمكنك مقارنة النتائج مع مواقيت المسجد القريب منك لضبط الفروق المحلية.</div>
+      <button class="gold-button" id="settingsDone">حفظ الإعدادات</button>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
